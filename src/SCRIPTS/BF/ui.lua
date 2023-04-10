@@ -93,6 +93,7 @@ local function createPopupMenu()
     popupMenu[#popupMenu + 1] = { t = "acc cal", f = function() confirm("CONFIRM/acc_cal.lua") end }
     if apiVersion >= 1.42 then
         popupMenu[#popupMenu + 1] = { t = "vtx tables", f = function() confirm("CONFIRM/vtx_tables.lua") end }
+        popupMenu[#popupMenu + 1] = { t = "set gps home", f = function() confirm("CONFIRM/gps.lua") end }
     end
 end
 
