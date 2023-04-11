@@ -12,8 +12,8 @@ local labels = {}
 local fields = {}
 
 if apiVersion >= 1.41 then
-    fields[#fields + 1] = { t = "latitude",        x = x,          y = inc.y(lineSpacing), sp = x + sp, min = -90, max = 90, vals = { 16 } }
-    fields[#fields + 1] = { t = "longitude",       x = x,          y = inc.y(lineSpacing), sp = x + sp, min = -180, max = 180, vals = { 1, 2 } }
+    fields[#fields + 1] = { t = "latitude",        x = x,          y = inc.y(lineSpacing), sp = x + sp, min = -90.9999999, max = 90.9999999, vals = { 16 } }
+    fields[#fields + 1] = { t = "longitude",       x = x,          y = inc.y(lineSpacing), sp = x + sp, min = -180.9999999, max = 180.9999999, vals = { 1, 2 } }
 end
 
 return {
