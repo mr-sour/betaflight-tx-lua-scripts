@@ -4,6 +4,10 @@ if apiVersion >= 1.36 then
     PageFiles[#PageFiles + 1] = { title = "VTX Settings", script = "vtx.lua" }
 end
 
+if apiVersion >= 1.45 then
+    PageFiles[#PageFiles + 1] = { title = "GPS HomePoint", script = "gpshomepoint.lua" }
+end
+
 if apiVersion >= 1.16 then
     PageFiles[#PageFiles + 1] = { title = "Profiles", script = "profiles.lua" }
 end
